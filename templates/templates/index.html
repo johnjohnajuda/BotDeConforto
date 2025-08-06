@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Seu Bot de Conforto</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      text-align: center;
+      padding: 50px;
+    }
+    button {
+      background: #6200ea;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+    .resposta {
+      margin-top: 30px;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      display: inline-block;
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🌸 Bot de Conforto 🌸</h1>
+  <form method="post">
+    <button type="submit">Quero um abraço em palavras</button>
+  </form>
+  {% if resposta %}
+    <div class="resposta"><p>{{ resposta }}</p></div>
+  {% endif %}
+</body>
+</html>
